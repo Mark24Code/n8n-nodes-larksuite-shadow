@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-larksuite-shadow",
-  "version": "0.1.4",
+  "version": "0.1.8",
   "description": "NOT FOR PUBLIC. Mirror n8n-nodes-larksuite for private test.",
   "keywords": [
     "n8n-community-node-package"
@@ -53,7 +53,7 @@
       "dist/nodes/LarkAttendance/LarkAttendance.node.js",
       "dist/nodes/LarkApproval/LarkApproval.node.js",
       "dist/nodes/LarkApps/LarkApps.node.js",
-      "dist/nodes/LarkAI/LarkAi.node.js",
+      "dist/nodes/LarkAI/LarkAI.node.js",
       "dist/nodes/LarkCompany/LarkCompany.node.js",
       "dist/nodes/LarkEmail/LarkEmail.node.js"
     ]

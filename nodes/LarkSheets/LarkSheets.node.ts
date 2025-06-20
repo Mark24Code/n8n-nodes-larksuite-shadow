@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow'
+import { INodeType, INodeTypeDescription } from 'n8n-workflow'
 import { properties } from './LarkSheets.properties'
 import { methods } from './LarkSheets.methods'
 
@@ -14,8 +14,8 @@ export class LarkSheets implements INodeType {
     defaults: {
       name: 'Lark Sheets',
     },
-    inputs: [NodeConnectionType.Main],
-    outputs: [NodeConnectionType.Main],
+    inputs: ['main'],
+    outputs: ['main'],
     credentials: [
       {
         displayName: 'Tenant Token',

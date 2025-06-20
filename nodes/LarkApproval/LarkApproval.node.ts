@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow'
+import { INodeType, INodeTypeDescription } from 'n8n-workflow'
 import { properties } from './LarkApproval.properties'
 import { methods } from './LarkApproval.methods'
 
@@ -14,8 +14,8 @@ export class LarkApproval implements INodeType {
     defaults: {
       name: 'Lark Approval',
     },
-    inputs: [NodeConnectionType.Main],
-    outputs: [NodeConnectionType.Main],
+    inputs: ['main'],
+    outputs: ['main'],
     credentials: [
       {
         displayName: 'Tenant Token',

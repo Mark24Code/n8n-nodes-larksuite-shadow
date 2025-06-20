@@ -1,11 +1,11 @@
-import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow'
-import { properties } from './LarkAi.properties'
-import { methods } from './LarkAi.methods'
+import { INodeType, INodeTypeDescription } from 'n8n-workflow'
+import { properties } from './LarkAI.properties'
+import { methods } from './LarkAI.methods'
 
 export class LarkAI implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Lark AI',
-    name: 'larkAi',
+    name: 'larkAI',
     icon: 'file:larkai.png',
     group: ['transform'],
     version: 1,
@@ -14,8 +14,8 @@ export class LarkAI implements INodeType {
     defaults: {
       name: 'Lark AI',
     },
-    inputs: [NodeConnectionType.Main],
-    outputs: [NodeConnectionType.Main],
+    inputs: ['main'],
+    outputs: ['main'],
     credentials: [
       {
         displayName: 'Tenant Token',

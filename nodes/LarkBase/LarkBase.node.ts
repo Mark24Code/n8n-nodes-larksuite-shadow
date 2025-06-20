@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow'
+import { INodeType, INodeTypeDescription } from 'n8n-workflow'
 import { properties } from './LarkBase.properties'
 import { methods } from './LarkBase.methods'
 
@@ -14,8 +14,8 @@ export class LarkBase implements INodeType {
     defaults: {
       name: 'Lark Base',
     },
-    inputs: [NodeConnectionType.Main],
-    outputs: [NodeConnectionType.Main],
+    inputs: ['main'],
+    outputs: ['main'],
     credentials: [
       {
         displayName: 'Tenant Token',

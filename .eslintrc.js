@@ -43,6 +43,7 @@ module.exports = {
 			plugins: ['eslint-plugin-n8n-nodes-base'],
 			extends: ['plugin:n8n-nodes-base/nodes'],
 			rules: {
+				'n8n-nodes-base/node-class-description-name-miscased': 'off',
 				'n8n-nodes-base/node-class-description-icon-not-svg': 'off',
 				'n8n-nodes-base/node-param-options-type-unsorted-items': 'off',
 				'n8n-nodes-base/node-execute-block-missing-continue-on-fail': 'off',
