@@ -39,40 +39,33 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'Mail Group',
         value: 'Email Mail Group',
-        description: '',
       },
       {
         name: 'Mail Group Member',
         value: 'Email Mail Group Member',
-        description: '',
       },
       {
         name: 'Mail Group Permission Member',
         value: 'Email Mail Group Permission Member',
-        description: '',
       },
       {
         name: 'Mail Group Alias',
         value: 'Email Mail Group Alias',
-        description: '',
       },
       {
         name: 'Public Mailbox',
         value: 'Email Public Mailbox',
-        description: '',
       },
       {
         name: 'Public Mailbox Member',
         value: 'Email Public Mailbox Member',
-        description: '',
       },
       {
         name: 'Public Mailbox Alias',
         value: 'Email Public Mailbox Alias',
-        description: '',
       },
     ],
-    default: '',
+    default: 'Email Mail Group',
   },
 ]
 
@@ -88,8 +81,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

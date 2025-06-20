@@ -41,50 +41,41 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'Calendar',
         value: 'Calendar Calendar',
-        description: '',
       },
       {
         name: 'Acl',
         value: 'Calendar ACL',
-        description: '',
       },
       {
         name: 'Event',
         value: 'Calendar Event',
-        description: '',
       },
       {
         name: 'Event Attendee',
         value: 'Calendar Event Attendee',
-        description: '',
       },
       {
         name: 'Event Attendee Chat Member',
         value: 'Calendar Event Attendee Chat Member',
-        description: '',
       },
       {
         name: 'Freebusy',
         value: 'Calendar Freebusy',
-        description: '',
       },
       {
         name: 'Timeoff',
         value: 'Calendar Timeoff',
-        description: '',
       },
       {
         name: 'Setting',
         value: 'Calendar Setting',
-        description: '',
       },
       {
         name: 'Exchange Binding',
         value: 'Calendar Exchange Binding',
-        description: '',
       },
     ],
-    default: '',
+    default: 'Calendar Calendar',
   },
 ]
 
@@ -100,8 +91,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

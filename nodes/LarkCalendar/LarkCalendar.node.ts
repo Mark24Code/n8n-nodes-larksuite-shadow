@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription } from 'n8n-workflow'
+import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow'
 import { properties } from './LarkCalendar.properties'
 import { methods } from './LarkCalendar.methods'
 
@@ -14,8 +14,8 @@ export class LarkCalendar implements INodeType {
     defaults: {
       name: 'Lark Calendar',
     },
-    inputs: ['main'],
-    outputs: ['main'],
+    inputs: [NodeConnectionType.Main],
+    outputs: [NodeConnectionType.Main],
     credentials: [
       {
         displayName: 'Tenant Token',

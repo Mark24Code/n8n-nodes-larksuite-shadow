@@ -35,20 +35,17 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'Image Recognition',
         value: 'AI Optical Character Recognition Image Recognition',
-        description: '',
       },
       {
         name: 'Speech Recognition',
         value: 'AI Speech To Text Speech Recognition',
-        description: '',
       },
       {
         name: 'Text',
         value: 'AI Machine Translation Text',
-        description: '',
       },
     ],
-    default: '',
+    default: 'AI Optical Character Recognition Image Recognition',
   },
 ]
 
@@ -64,8 +61,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

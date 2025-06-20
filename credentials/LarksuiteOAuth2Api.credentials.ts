@@ -5,7 +5,7 @@ export class LarkSuiteOAuth2Api implements ICredentialType {
 
   extends = ['oAuth2Api'];
 
-  displayName = 'LarkSuite OAuth2';
+  displayName = 'LarkSuite OAuth2 API';
 
 	documentationUrl = 'https://open.larksuite.com/document/server-docs/getting-started/api-access-token/g';
 

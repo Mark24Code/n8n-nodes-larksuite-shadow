@@ -40,45 +40,37 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'User',
         value: 'Contacts User',
-        description: '',
       },
       {
         name: 'Department',
         value: 'Contacts Department',
-        description: '',
       },
       {
         name: 'User Group',
         value: 'Contacts User Group',
-        description: '',
       },
       {
         name: 'User Group Member',
         value: 'Contacts User Group User Group Member',
-        description: '',
       },
       {
         name: 'Unit',
         value: 'Contacts Unit',
-        description: '',
       },
       {
         name: 'Workforce Type',
         value: 'Contacts Workforce Type',
-        description: '',
       },
       {
-        name: 'Custom User Fields',
+        name: 'Custom User Field',
         value: 'Contacts Custom User Fields',
-        description: '',
       },
       {
         name: 'Contact Scope',
         value: 'Contacts Contact Scope',
-        description: '',
       },
     ],
-    default: '',
+    default: 'Contacts User',
   },
 ]
 
@@ -94,8 +86,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

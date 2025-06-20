@@ -24,7 +24,7 @@ const tokenExpirationMap = new Map<string, number>();
 export class LarkSuiteTenantApi implements ICredentialType {
 	name = 'larkSuiteTenantApi';
 
-	displayName = 'LarkSuite Tenant';
+	displayName = 'LarkSuite Tenant API';
 
 	documentationUrl =
 		'https://open.larksuite.com/document/server-docs/getting-started/api-access-token/g';
@@ -128,7 +128,7 @@ export class LarkSuiteTenantApi implements ICredentialType {
 
 		// store up to 100 tokens
 		if (tokenExpirationMap.size > 100) {
-			tokenExpirationMap.delete(tokenExpirationMap.keys().next().value);
+			tokenExpirationMap.delete(tokenExpirationMap.keys().next().value || '')
 		}
 
 		return { tenantAccessToken };

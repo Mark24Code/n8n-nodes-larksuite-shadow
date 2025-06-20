@@ -37,30 +37,25 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'App',
         value: 'Docs Bitable App',
-        description: '',
       },
       {
         name: 'Table',
         value: 'Docs Bitable Table',
-        description: '',
       },
       {
         name: 'View',
         value: 'Docs Bitable View',
-        description: '',
       },
       {
         name: 'Record',
         value: 'Docs Bitable Record',
-        description: '',
       },
       {
         name: 'Field',
         value: 'Docs Bitable Field',
-        description: '',
       },
     ],
-    default: '',
+    default: 'Docs Bitable App',
   },
 ]
 
@@ -76,8 +71,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

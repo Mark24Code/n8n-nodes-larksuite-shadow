@@ -41,51 +41,42 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'Attendance Group',
         value: 'Attendance Attendance Group',
-        description: '',
       },
       {
         name: 'Attendance Shift',
         value: 'Attendance Attendance Shift',
-        description: '',
       },
       {
         name: 'Attendance Schedule',
         value: 'Attendance Attendance Schedule',
-        description: '',
       },
       {
-        name: 'Attendance Statistics',
+        name: 'Attendance Statistic',
         value: 'Attendance Attendance Statistics',
-        description: '',
       },
       {
-        name: 'Attendance Records',
+        name: 'Attendance Record',
         value: 'Attendance Attendance Records',
-        description: '',
       },
       {
         name: 'Attendance Correction',
         value: 'Attendance Attendance Correction',
-        description: '',
       },
       {
-        name: 'User Settings',
+        name: 'User Setting',
         value: 'Attendance User Settings',
-        description: '',
       },
       {
-        name: 'Files',
+        name: 'File',
         value: 'Attendance Files',
-        description: '',
       },
       {
         name: 'Task',
         value:
           'Attendance Attendance（ Historical Version） API Reference Task',
-        description: '',
       },
     ],
-    default: '',
+    default: 'Attendance Attendance Group',
   },
 ]
 
@@ -101,8 +92,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

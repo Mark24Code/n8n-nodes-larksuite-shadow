@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription } from 'n8n-workflow'
+import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow'
 import { properties } from './LarkAttendance.properties'
 import { methods } from './LarkAttendance.methods'
 
@@ -14,8 +14,8 @@ export class LarkAttendance implements INodeType {
     defaults: {
       name: 'Lark Attendance',
     },
-    inputs: ['main'],
-    outputs: ['main'],
+    inputs: [NodeConnectionType.Main],
+    outputs: [NodeConnectionType.Main],
     credentials: [
       {
         displayName: 'Tenant Token',

@@ -39,40 +39,33 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'Spreadsheet',
         value: 'Docs Sheets Spreadsheet',
-        description: '',
       },
       {
-        name: 'Sheet  Filter',
+        name: 'Sheet Filter',
         value: 'Docs Sheets Sheet Filter',
-        description: '',
       },
       {
-        name: 'Sheet  Filter View',
+        name: 'Sheet Filter View',
         value: 'Docs Sheets Sheet Filter View',
-        description: '',
       },
       {
-        name: 'Filter Condition  Filter View',
+        name: 'Filter Condition Filter View',
         value: 'Docs Sheets Filter Condition Filter View',
-        description: '',
       },
       {
-        name: 'Sheet  Row Column',
+        name: 'Sheet Row Column',
         value: 'Docs Sheets Sheet Row Column',
-        description: '',
       },
       {
-        name: 'Sheet  Data',
+        name: 'Sheet Data',
         value: 'Docs Sheets Sheet Data',
-        description: '',
       },
       {
-        name: 'Sheet  Floating Image',
+        name: 'Sheet Floating Image',
         value: 'Docs Sheets Sheet Floating Image',
-        description: '',
       },
     ],
-    default: '',
+    default: 'Docs Sheets Spreadsheet',
   },
 ]
 
@@ -88,8 +81,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

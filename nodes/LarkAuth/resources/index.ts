@@ -36,25 +36,21 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'Api Access Token',
         value: 'API Access Token',
-        description: '',
       },
       {
-        name: 'Store Apps',
+        name: 'Store App',
         value: 'API Access Token Store Apps',
-        description: '',
       },
       {
-        name: 'Custom Apps',
+        name: 'Custom App',
         value: 'API Access Token Custom Apps',
-        description: '',
       },
       {
-        name: 'User Id',
+        name: 'User ID',
         value: 'API Access Token User ID',
-        description: '',
       },
     ],
-    default: '',
+    default: 'API Access Token',
   },
 ]
 
@@ -70,8 +66,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

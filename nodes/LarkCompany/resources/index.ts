@@ -33,7 +33,6 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'Tenant',
         value: 'Company Information Tenant',
-        description: '',
       },
     ],
     default: '',
@@ -52,8 +51,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],

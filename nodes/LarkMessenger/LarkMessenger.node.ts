@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription } from 'n8n-workflow'
+import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow'
 import { properties } from './LarkMessenger.properties'
 import { methods } from './LarkMessenger.methods'
 
@@ -14,8 +14,8 @@ export class LarkMessenger implements INodeType {
     defaults: {
       name: 'Lark Messenger',
     },
-    inputs: ['main'],
-    outputs: ['main'],
+    inputs: [NodeConnectionType.Main],
+    outputs: [NodeConnectionType.Main],
     credentials: [
       {
         displayName: 'Tenant Token',

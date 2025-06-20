@@ -42,55 +42,45 @@ const resourceSelect: INodeProperties[] = [
       {
         name: 'File',
         value: 'Docs File Management File',
-        description: '',
       },
       {
-        name: 'Multipart Upload Files',
+        name: 'Multipart Upload File',
         value: 'Docs File Management File Multipart Upload Files',
-        description: '',
       },
       {
         name: 'Permission Member',
         value: 'Docs File Management Permission Permission Member',
-        description: '',
       },
       {
         name: 'Permissionpublic',
         value: 'Docs File Management Permission Permission Public',
-        description: '',
       },
       {
-        name: 'Statistics',
+        name: 'Statistic',
         value: 'Docs File Management Statistics',
-        description: '',
       },
       {
         name: 'Media',
         value: 'Docs File Management Media',
-        description: '',
       },
       {
         name: 'Multipart Upload Media',
         value: 'Docs File Management Media Multipart Upload Media',
-        description: '',
       },
       {
         name: 'Comment',
         value: 'Docs File Management Comment',
-        description: '',
       },
       {
         name: 'Subscription',
         value: 'Docs File Management Subscription',
-        description: '',
       },
       {
         name: 'Document Import',
         value: 'Docs File Management Document Import',
-        description: '',
       },
     ],
-    default: '',
+    default: 'Docs File Management File',
   },
 ]
 
@@ -106,8 +96,7 @@ const extraProperties: INodeProperties[] = [
         displayName: 'Use Custom Body',
         name: 'useCustomBody',
         type: 'boolean',
-        description: 'Wether to use a custom body',
-        required: true,
+        description: 'Whether to use a custom body',
         default: false,
       },
     ],
